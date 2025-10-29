@@ -15,10 +15,10 @@ export default function Contact() {
     if (name === 'message') {
       if (value.length < 200) {
         setIsMessageValid(false);
-        setWarning(`Minimum 200 characters required (${value.length}/200)`);
-      } else if (value.length > 400) {
+        setWarning(`Minimum 100 characters required (${value.length}/100)`);
+      } else if (value.length > 200) {
         setIsMessageValid(false);
-        setWarning('⚠️ Message too long! Please reduce below 400 characters.');
+        setWarning('Message too long! Please reduce below 200 characters.');
       } else {
         setIsMessageValid(true);
         setWarning('');
@@ -59,7 +59,7 @@ export default function Contact() {
   };
 
   return (
-    <section id="contact" className="py-24 sm:py-32 bg-white">
+    <section id="contact" className="py-12 bg-white">
       <div className="max-w-6xl mx-auto px-6 lg:px-8">
         
         {/* Header */}
@@ -112,7 +112,7 @@ export default function Contact() {
                   required
                   minLength={200}
                   maxLength={400}
-                  className={`w-full px-4 py-3 border rounded-lg shadow-sm focus:ring-amber-500 focus:border-amber-500 transition ${
+                  className={`w-full px-4 py-3 border rounded-lg shadow-sm focus:ring-amber-500 focus:border-amber-500 transition hide-scrollbar ${
                     warning ? 'border-red-400' : 'border-gray-300'
                   }`}
                 />

@@ -25,7 +25,7 @@ import {
 const contactInfo = [
     { icon: FiMail, title: 'Email Me', detail: 'mohithknl@gmail.com', href: 'mailto:mohithknl@gmail.com' },
     { icon: FiPhone, title: 'Call Me', detail: '+91 7396289316', href: 'tel:+91 7396289316' },
-    { icon: FiMapPin, title: 'Location', detail: 'City, State, Country', href: 'https://www.google.com/maps/place/Kurnool,+Andhra+Pradesh' },
+    { icon: FiMapPin, title: 'Location', detail: 'Kurnool, Andhra Pradesh, India', href: 'https://www.google.com/maps/place/Kurnool,+Andhra+Pradesh' },
 ];
 const socialLinks = [
     { icon: FiLinkedin, href: 'https://www.linkedin.com/in/mohith-hanumanthkar-0407raj/', label: 'LinkedIn' },

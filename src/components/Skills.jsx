@@ -4,7 +4,7 @@ import SkillCard from "./SkillCard";
 const infiniteSkills = [...skills, ...skills, ...skills, ...skills];
 export default function Skills() {
   return (
-    <section id="skills" className="py-24 sm:py-32 bg-gray-50 overflow-hidden">
+    <section id="skills" className="py-12 bg-white overflow-hidden">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         
         <div className="text-center mb-16">

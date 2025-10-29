@@ -5,7 +5,7 @@ import ProjectCard from './ProjectCard';
 // Main Projects Section Component
 export default function Projects() {
   return (
-    <section id="projects" className="py-24 sm:py-32 bg-gray-50 overflow-hidden">
+    <section id="projects" className="py-12 bg-gray-50 overflow-hidden">
       <div className="max-w-6xl mx-auto px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-4xl sm:text-5xl font-bold text-gray-900 mb-4">Featured Projects</h2>

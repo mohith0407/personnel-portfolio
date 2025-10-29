@@ -15,7 +15,9 @@ html {
 html, body, #__next {
   height: 100%;
 }
-
+section{
+  height: 100%;
+}
 body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -24,6 +26,14 @@ body {
 /* ensure hero bg extends under header visually */
 .header-overlay {
   background: transparent;
+}
+/* Hide scrollbar but allow scrolling */
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.hide-scrollbar {
+  -ms-overflow-style: none; 
 }
 @keyframes fadeInLeft {
   from {
@@ -78,18 +88,12 @@ body {
   opacity: 0;
   animation-delay: 0.2s;
 }
-/* --------------------------------------------------
-   ✨ CUSTOM CSS FOR INFINITE SCROLL ANIMATION
-   -------------------------------------------------- */
-
-/* Define keyframes for continuous scroll */
 @keyframes scroll {
   from {
     transform: translateX(0);
   }
-  /* Adjust calc() if you change card width or spacing */
   to {
-    transform: translateX(calc(-11 * 12rem)); /* 11 items × (10rem width + 2rem space = 12rem) */
+    transform: translateX(calc(-11 * 12rem)); 
   }
 }
 
