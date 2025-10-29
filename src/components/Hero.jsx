@@ -5,7 +5,7 @@ export default function Hero() {
   return (
     <section
       id="home"
-      className="relative overflow-hidden pt-24  min-h-[650px] flex items-center bg-gray-50"
+      className="relative overflow-hidden md:pt-32 py-24  min-h-[650px] flex items-center bg-gray-50"
     >
       <div className="absolute right-0 top-0 w-[50%] h-full z-0 bg-gradient-to-l from-amber-300 via-amber-200 to-transparent md:hidden" />
       <div className="absolute right-0 top-0 w-[55%] h-full z-0 hidden md:block">
