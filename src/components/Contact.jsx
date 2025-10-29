@@ -13,9 +13,9 @@ export default function Contact() {
     setFormData({ ...formData, [name]: value });
 
     if (name === 'message') {
-      if (value.length < 200) {
+      if (value.length < 100) {
         setIsMessageValid(false);
-        setWarning(`Minimum 100 characters required (${value.length}/100)`);
+        setWarning(`Minimum 100 characters required (${value.length}/200)`);
       } else if (value.length > 200) {
         setIsMessageValid(false);
         setWarning('Message too long! Please reduce below 200 characters.');
@@ -110,15 +110,15 @@ export default function Contact() {
                   value={formData.message}
                   onChange={handleChange}
                   required
-                  minLength={200}
-                  maxLength={400}
+                  minLength={100}
+                  maxLength={220}
                   className={`w-full px-4 py-3 border rounded-lg shadow-sm focus:ring-amber-500 focus:border-amber-500 transition hide-scrollbar ${
                     warning ? 'border-red-400' : 'border-gray-300'
                   }`}
                 />
                 <div className="flex justify-between items-center mt-1">
                   <p className={`text-xs ${warning ? 'text-red-500' : 'text-gray-500'}`}>
-                    {warning || `${formData.message.length}/400 characters`}
+                    {warning || `${formData.message.length}/200 characters`}
                   </p>
                 </div>
               </div>

@@ -75,13 +75,13 @@ export default function Header() {
                 {n.name}
               </a>
             ))}
-            <a
+            {/* <a
               href="#contact"
               onClick={() => setOpen(false)}
               className="py-2 px-3 bg-amber-400 text-white rounded-lg text-center"
             >
               Contact
-            </a>
+            </a> */}
           </div>
         </div>
       )}
