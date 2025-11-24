@@ -58,7 +58,7 @@ const projects_data = [
     {
       number: '01',
       title: 'Chat Buddies',
-      description: 'Built a real-time chat system supporting instant one-to-one and group messaging utilizing WebSockets for instant, low-latency, bi-directional communication. Implemented efficient message delivery across multiple servers.',
+      description: 'Built a real-time chat system supporting instant one-to-one and group messaging utilizing WebSockets for instant, low-latency, bi-directional communication. Implemented efficient message delivery and features secure user authentication',
       tags: ['ReactJs', 'TailwindCSS', 'Websockets','NodeJs','Express','MongoDB'],
       liveLink: 'https://chat-buddies-three.vercel.app',
       githubLink: 'https://github.com/mohith0407/chat-buddies',
