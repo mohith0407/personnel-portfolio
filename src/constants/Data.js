@@ -55,29 +55,29 @@ const education = [
     },
 ];
 const projects_data = [
+    {
+      number: '01',
+      title: 'ChatUpp',
+      description: 'Built a real-time chat system supporting instant one-to-one and group messaging utilizing WebSockets for instant, low-latency, bi-directional communication. Implemented efficient message delivery across multiple servers.',
+      tags: ['ReactJs', 'TailwindCSS', 'Websockets','NodeJs','Express','MongoDB'],
+      liveLink: 'https://chat-buddies-three.vercel.app',
+      githubLink: 'https://github.com/mohith0407/chat-buddies',
+    },
   {
-    number: '01',
+    number: '02',
     title: 'Doctor Appointment App',
-    description: 'A full-stack healthcare platform that allows patients to book, reschedule, and manage appointments with doctors in real time. Features secure authentication, role-based dashboards for doctors and patients, and integrated payment and notification systems for a seamless experience.',
+    description: 'A full-stack healthcare platform that allows patients to book, reschedule, and manage appointments with doctors in real time. Features secure authentication, role-based dashboards for doctors and patients and integrated notification systems for a seamless experience.',
     tags: ['ReactJs', 'Tailwind CSS', 'Azure SQL', 'Azure Functions', 'NodeJs','Express'],
     liveLink: '#',
     githubLink: 'https://github.com/mohith0407/doctor-appointment-using-azurehttps://github.com/mohith0407/doctor-appointment-using-azure',
   },
   {
-    number: '02',
-    title: 'EduNoww(E-learning)',
-    description: 'An interactive LMS that enables students to enroll in courses, while admin can manage content, upload materials, and monitor performance. Built for scalability, accessibility, and smooth content delivery.',
-    tags: ['React', 'Redux', 'MongoDB', 'NodeJs','Express'],
-    liveLink: 'http://edunoww.onrender.com',
-    githubLink: 'https://github.com/mohith0407/EduNoww',
-  },
-  {
     number: '03',
-    title: 'ChatUpp',
-    description: 'Built a real-time chat system supporting instant one-to-one messaging. Implemented efficient message delivery across multiple servers.',
-    tags: ['Next.js', 'TailwindCSS', 'Sass', 'Websocket','NodeJs','Express'],
-    liveLink: '#',
-    githubLink: 'https://github.com/mohith0407/ChatUpp',
+    title: 'EduNoww',
+    description: 'An interactive LMS(E-learning) that enables students to enroll in courses, watch course content while admin can manage content, upload materials, and monitor performance. Built for scalability, accessibility, and smooth content delivery.',
+    tags: ['React','TailwindCSS', 'Redux', 'MongoDB', 'NodeJs','Express'],
+    liveLink: 'https://edu-noww.vercel.app/',
+    githubLink: 'https://github.com/mohith0407/EduNoww',
   },
 ];
 
