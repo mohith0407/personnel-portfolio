@@ -13,12 +13,12 @@ export default function Contact() {
     setFormData({ ...formData, [name]: value });
 
     if (name === 'message') {
-      if (value.length < 100) {
+      if (value.length < 10) {
         setIsMessageValid(false);
-        setWarning(`Minimum 100 characters required (${value.length}/200)`);
-      } else if (value.length > 200) {
+        setWarning(`Minimum 10 characters required.`);
+      } else if (value.length > 500) {
         setIsMessageValid(false);
-        setWarning('Message too long! Please reduce below 200 characters.');
+        setWarning('Message too long! Please reduce below 500 characters.');
       } else {
         setIsMessageValid(true);
         setWarning('');
@@ -42,15 +42,15 @@ export default function Contact() {
 
       const result = await response.json();
       if (result.success) {
-        alert('✅ Message sent successfully!');
+        alert('Message sent successfully!');
         setFormData({ name: '', email: '', message: '' });
         setIsMessageValid(false);
         setWarning("");
       } else {
-        alert('❌ Failed to send message. Please try again.');
+        alert('Failed to send message. Please try again.');
       }
     } catch (error) {
-      alert('⚠️ An error occurred. Please try again.');
+      alert('An error occurred. Please try again.');
     } finally {
       setTimeout(() => {
       setIsSubmitting(false);
@@ -110,15 +110,15 @@ export default function Contact() {
                   value={formData.message}
                   onChange={handleChange}
                   required
-                  minLength={100}
-                  maxLength={220}
+                  minLength={10}
+                  maxLength={501}
                   className={`w-full px-4 py-3 border rounded-lg shadow-sm focus:ring-amber-500 focus:border-amber-500 transition hide-scrollbar ${
                     warning ? 'border-red-400' : 'border-gray-300'
                   }`}
                 />
                 <div className="flex justify-between items-center mt-1">
                   <p className={`text-xs ${warning ? 'text-red-500' : 'text-gray-500'}`}>
-                    {warning || `${formData.message.length}/200 characters`}
+                    {warning || `${formData.message.length}/500 characters`}
                   </p>
                 </div>
               </div>
