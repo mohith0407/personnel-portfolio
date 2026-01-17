@@ -41,7 +41,7 @@ export default function Hero() {
               Github
             </a>
             <a
-  href="/assets/Resume V3.pdf"
+  href="/assets/Resume 3.2.pdf"
   download="GKH_Mohith_Resume.pdf"
   target="_blank" rel="noopener noreferrer" 
   className="px-6 py-3 border border-gray-900 text-gray-900 rounded-lg font-semibold hover:bg-gray-100 transition duration-300 ease-in-out transform hover:scale-[1.02] active:scale-[0.98]"
