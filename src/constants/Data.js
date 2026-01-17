@@ -55,13 +55,13 @@ const education = [
     },
 ];
 const projects_data = [
-    {
+  {
       number: '01',
-      title: 'Chat Buddies',
-      description: 'Built a real-time chat system supporting instant one-to-one and group messaging utilizing WebSockets for instant, low-latency, bi-directional communication. Implemented efficient message delivery and features secure user authentication',
-      tags: ['ReactJs', 'TailwindCSS', 'Websockets','NodeJs','Express','MongoDB'],
-      liveLink: 'https://chat-buddies-three.vercel.app',
-      githubLink: 'https://github.com/mohith0407/chat-buddies',
+      title: 'NodeLink',
+      description: 'A lightweight, multi-threaded BitTorrent client written from scratch in C++. This project demonstrates a deep implementation of the BitTorrent Protocol (BTP/1.0) without relying on high-level networking libraries.The primary goal of this project is to explore low-level system engineering concepts, including TCP/IP socket programming, non-blocking I/O (epoll), and binary data parsing.',
+      tags: ['Cpp', 'CMake', 'BitTorrent','Bencoding'],
+      liveLink: '#',
+      githubLink: 'https://github.com/mohith0407/NodeLink',
     },
   {
     number: '02',
@@ -74,11 +74,19 @@ const projects_data = [
   {
     number: '03',
     title: 'EduNoww',
-    description: 'An interactive LMS(E-learning) that enables students to enroll in courses, watch course content while admin can manage content, upload materials, and monitor performance. Built for scalability, accessibility, and smooth content delivery.',
-    tags: ['React','TailwindCSS', 'Redux', 'MongoDB', 'NodeJs','Express'],
-    liveLink: 'https://edu-noww.vercel.app/',
-    githubLink: 'https://github.com/mohith0407/EduNoww',
+    description: 'An interactive LMS(E-learning) that enables students to enroll in courses, watch course content while admin can manage content, upload materials, and monitor performance. Built for scalability, accessibility, and smooth content delivery, enhanced with AI chatbot for queries related to payment processing and course curricula ',
+    tags: ['React','TailwindCSS', 'Redux', 'MongoDB', 'NodeJs','Express', 'openAI API'],
+    liveLink: 'https://edunoww.vercel.app',
+    githubLink: 'https://github.com/mohith0407/edunoww-upgrade',
   },
+  {
+      number: '04',
+      title: 'Chat Buddies',
+      description: 'Built a real-time chat system supporting instant one-to-one and group messaging utilizing WebSockets for instant, low-latency, bi-directional communication. Implemented efficient message delivery and features secure user authentication',
+      tags: ['ReactJs', 'TailwindCSS', 'Websockets','NodeJs','Express','MongoDB'],
+      liveLink: 'https://chat-buddies-three.vercel.app',
+      githubLink: 'https://github.com/mohith0407/chat-buddies',
+    },
 ];
 
 const skills = [
